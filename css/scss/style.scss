@@ -4,11 +4,11 @@ body {
     .header {
         .nav {
             justify-content: space-evenly;
-            .wrapper {
+            &__wrapper {
                 display: flex;
                 align-items: center;
                 justify-content: space-evenly;
-                .toggle-btn {
+                .nav__hambuergerMenu {
                     display: flex;
                     flex-direction: column;
                     min-width: 30px;
@@ -16,19 +16,19 @@ body {
                     border: 1px solid #333;
                     padding: 4px;
                     cursor: pointer;
-                    &__line {
+                    .nav__hambuergerLine {
                         width: 100%;
                         border-bottom: 2px solid #333;
                         margin-bottom: 5px;
                     }
                 }
             }
-            .topnav {
+            &__list {
                 display: flex;
                 list-style-type: none;
                 background-color: #1b2538;
                 transition: all 0.5s;
-                li {
+                .nav__listItem {
                     a {
                         display: block;
                         padding: 14px 16px;
@@ -43,11 +43,10 @@ body {
         .header {
             .nav {
                 display: block;
-                .topnav {
+                &__list {
                     display: none;
                 }
-                // btn押下時
-                .open {
+                .navOpen {
                     display: block;
                 }
             }
@@ -57,13 +56,15 @@ body {
         .header {
             .nav {
                 display: flex;
-
-                .wrapper {
-                    .toggle-btn {
+                &__wrapper {
+                    .nav__hambuergerMenu {
                         display: none;
                     }
                 }
-                .topnav {
+                &__list {
+                    display: flex;
+                }
+                .navOpen {
                     display: flex;
                 }
             }

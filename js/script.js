@@ -1,6 +1,6 @@
-let btn = document.querySelector('.toggle-btn');
-let topnav = document.querySelector('.topnav');
+let btn = document.querySelector('.nav__hambuergerMenu');
+let navList = document.querySelector('.nav__list');
 
 btn.onclick = () => {
-    topnav.classList.toggle('open');
+    navList.classList.toggle('navOpen');
 };
