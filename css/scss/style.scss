@@ -6,8 +6,9 @@ body {
             justify-content: space-evenly;
             .wrapper {
                 display: flex;
+                align-items: center;
                 justify-content: space-evenly;
-                .hamburger {
+                .toggle-btn {
                     display: flex;
                     flex-direction: column;
                     min-width: 30px;
@@ -18,7 +19,7 @@ body {
                     &__line {
                         width: 100%;
                         border-bottom: 2px solid #333;
-                        margin-bottom: 4px;
+                        margin-bottom: 5px;
                     }
                 }
             }
@@ -26,10 +27,11 @@ body {
                 display: flex;
                 list-style-type: none;
                 background-color: #1b2538;
+                transition: all 0.5s;
                 li {
                     a {
                         display: block;
-                        // padding: 14px 16px;
+                        padding: 14px 16px;
                         text-decoration: none;
                         color: white;
                     }
@@ -42,6 +44,10 @@ body {
             .nav {
                 display: block;
                 .topnav {
+                    display: none;
+                }
+                // btn押下時
+                .open {
                     display: block;
                 }
             }
@@ -53,7 +59,7 @@ body {
                 display: flex;
 
                 .wrapper {
-                    .hamburger {
+                    .toggle-btn {
                         display: none;
                     }
                 }
