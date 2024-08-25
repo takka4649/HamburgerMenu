@@ -1,0 +1,11 @@
+//breakpoints
+$sm: 0px;
+$md: 480px;
+$lg: 768px;
+$xl: 1200px;
+
+@mixin mq($breakpoint) {
+    @media (min-width: ($breakpoint)) {
+        @content;
+    }
+}
